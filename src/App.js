@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import About from "./components/About/About";
-import Portfolio from "./components/Portfolio/Portfolio";
-import Contact from "./components/Contact/Contact";
+import Home from "./pages/Home";
+import About from "./pages/AboutMe";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/ContactMe";
+import NoMatch from "./pages/NoMatch";
+
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 // import Blog from './components/Blog/Blog'
 // import Sidebar from './components/Sidebar/Sidebar'
 // import Introduction from './components/Introduction/Introduction'
@@ -12,7 +17,7 @@ function App() {
   return (
     <Router>
       <div className="main">
-        <Nav />
+        <Navbar />
         <Switch>
           <Route
             exact
